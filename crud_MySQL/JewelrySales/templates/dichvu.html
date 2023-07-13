@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static './css/style.css' %}">
+    
+</head>
+<body>
+
+    <!-- header section starts  -->
+    <header class="header">
+    
+        <nav class="navbar">
+            <a href="{% url 'home'%}"> <img src="{% static './images/Logo.jpg' %}" alt=""></a>
+            <a href="{% url 'home'%}">Trang chủ</a>
+            <a href="{% url 'trangsuc'%}">Trang sức</a>
+            <a href="{% url 'trangsuc'%}">Quà Tặng</a>
+            <a href="{% url 'khuyenmai'%}">Khuyến Mãi</a>
+            <a href="{% url 'dichvu'%}">Dịch vụ</a>
+            <a href="{% url 'gioithieuvalienhe'%}">Giới thiệu & Liên Hệ</a>
+        </nav>
+    
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+    
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Tìm kiếm...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="{% static './images/cart-img-1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>Nhẫn Bạc Nam Hoa Văn</h3>
+                    <span class="price">650.000VND</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="{% static './images/cart-img-2.jpg' %}" alt="">
+                <div class="content">
+                    <h3>Nhẫn Bạc Nữ Hình Rắn</h3>
+                    <span class="price">350.000VND</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="{% static './images/cart-img-3.jpg' %}" alt="">
+                <div class="content">
+                    <h3>Nhẫn Cặp Bạc Tình Yêu Cao Cấp</h3>
+                    <span class="price">650.000VND</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> Tổng : 1.650.000VND </div>
+            <a href="#" class="btn">Thanh toán</a>
+        </div>
+    
+        <form action="" class="login-form">
+            <h3>Đăng nhập tài khoản</h3>
+            <input type="Email" placeholder="Email" class="box">
+            <input type="Mật Khẩu" placeholder="Mật khẩu" class="box">
+            <p>Quên mật khẩu? <a href="{% url 'quenmatkhau'%}">Bấm vào đây</a></p>
+            <p>Không có tài khoản? <a href="{% url 'dangky'%}">Đăng ký ngay</a></p>
+            <input type="submit" value="Đăng nhập" class="btn">
+        </form>
+    
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>WEBSITE CỬA HÀNG TRANG SỨC DỰA TRÊN GIẢI THUẬT FP-GROWTH </h3>
+        <p>CỬA HÀNG TRANG SỨC KIM THÀNH</p>
+        <p>"Vẻ đẹp là linh hồn của cơ thể"</p>
+    </div>
+
+</section>
+<!-- home section ends -->
+
+<!-- features section starts  -->
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>Dịch Vụ</span> </h1>
+    <p>Để Khách hàng có thể mua hàng trực tuyến chính xác và phù hợp với kích cỡ mình sử dụng xin vui lòng bấm vào <a href="{% url 'huongdandosize'%}"><b>ĐÂY</b></a>để được hướng dẫn đo size sản phẩm một cách chính xác nhất</p>
+    <h1><b>Bảo Hành và Thu Đổi </b></h1>
+    <p><b>Thu đổi 48 giờ</b></p>
+    <p style="text-align:center;"><a> <img src="{% static './images/baohanh.png' %}" alt=""></a></p>
+    <p>Lưu ý:</p>
+    <p>
+        <li>Sản phẩm thu đổi trong 48 giờ phải còn nguyên vẹn, không phân biệt cùng hay khác nhóm hàng</li>
+        <li>Không chấp nhận trả hàng, Kim Thành Jewelry chỉ thu lại theo quy định của từng nhóm hàng.</li>
+        <li>Khách hàng chỉ được thu đổi sản phẩm 01 lần duy nhất.</li>
+        <li>Quý khách vui lòng giữ sản phẩm nguyên vẹn, chưa qua sử dụng, bao bì, thông tin hóa đơn điện tử đầy đủ.</li>  
+    </p>
+    <p><b>Trang sức vàng, platinum</b></p>
+    <p>
+        <li>Bảo hành 6 tháng lỗi kỹ thuật, nước xi, sau 6 tháng tính phí theo mức phí.</li>
+        <li>Bảo hành miễn phí đánh bóng, siêu âm vô thời hạn, thay đá tổng hợp, CZ và ECZ trong suốt thời gian bảo hành.</li>
+        <li>Đối với sản phẩm bị oxy hóa, xuống màu sẽ được siêu âm làm sạch bằng máy chuyên dụng (siêu âm, không xi) miễn phí vĩnh viễn tại cửa hàng.</li>
+        <li>Nhẫn cưới bảo hành khắc chữ, làm mới, đánh bóng, xi miễn phí trọn đời, ngoại trừ bù thêm nguyên liệu vàng, platinum hoặc thay thế đá màu, ngọc trai, kim cương.</li>
+        <li>Không bảo hành kiềng, vòng, nữ trang , dây chuyền, dây cổ chế tác, lắc chế tác bị đứt, gãy và sản phẩm bị lỗi do tác động bên ngoài, do quá trình sử dụng hoặc sử dụng không đúng cách dẫn đến sản phẩm bị biến dạng hoặc hư hỏng, mất họa tiết phụ, họa tiết nhỏ, rớt mất đá màu, ngọc trai, kim cương.</li>
+    </p>
+    <p><b>Trang sức bạc</b></p>
+    <p>
+        <li>Thay miễn phí đá tổng hợp trong suốt thời gian sản phẩm được bảo hành.</li>
+        <li>Miễn phí siêu âm làm sạch bằng máy chuyên dụng (không xi) đối với sản phẩm xuống màu.</li>
+        <li>Miễn phí bảo hành 3 tháng đầu về mặt kỹ thuật, rớt đá, nước xi.</li>
+        <li>Bảo hành có phí với sản phẩm từ tháng 4 đến hết tháng thứ 12.</li>
+    </p>
+    <h1><b>Giao Hàng Miễn Phí</b></h1>
+    <p>Với cam kết phục vụ tốt nhất, Kim Thành Jewelry và đối tác hân hạnh giao hàng đến quý khách hàng trên khắp 63 tỉnh thành và không thu phí vận chuyển.</p>
+    <p style="text-align:center;"><a> <img src="{% static './images/ship.png' %}" alt=""></a></p>
+    <p>Thời gian giao dự kiến sẽ được thể hiện cụ thể trong quá trình đặt hàng dựa vào khoảng cách đến nhà khách từ cửa hàng gần nhất có hàng:</p>
+    <p style="text-align:center;"><a> <img src="{% static './images/ship1.png' %}" alt=""></a></p>
+    <p>Thời gian dự kiến được tính từ lúc chuyên viên tư vấn Kim Thành Jewelry liên hệ khách xác nhận đơn hàng thành công và có thể dao động sớm hoặc hy hữu muộn hơn.</p>
+    <p>Áp dụng một số sản phẩm có gắn nhãn <b>Giao hàng 3h</b> tại nội thành TPHCM, Hà Nội, Đà Nẵng, Hải Phòng, Bắc Ninh, Thủ Dầu Một, Dĩ An, Thuận An, Biên Hòa, Bà Rịa, Vũng Tàu:</p>
+    <p style="text-align:center;"><a> <img src="{% static './images/ship2.png' %}" alt=""></a></p>
+    <p>Kim Thành Jewelry cam kết tất cả các đơn hàng được giao đều là hàng chính hãng, nguyên tem mác, đi kèm hóa đơn, được đóng gói bằng bao bì có logo, dán băng keo và 02 tem niêm phong của Kim Thành Jewelry.</p>
+    <p>Trước khi chấp nhận và thanh toán cho một đơn hàng,<b>quý khách hàng có quyền yêu cầu được mở thùng hàng để kiểm tra hàng hóa bên trong</b> có đúng với thông tin đặt hàng hay không, bao gồm: số lượng, chủng loại, màu sắc, hình thức, tính nguyên vẹn của hàng hóa.</p>
+    <p>Kim Thành Jewelry khuyến khích <b>quý khách hàng quay lại video trong suốt quá trình kiểm tra</b>, để những vấn đề phát sinh được xử lý thuận lợi hơn.</p>
+    <p><b>Quý khách hàng có quyền từ chối nhận hàng nếu phát hiện thùng hàng không còn nguyên vẹn hoặc thiếu tem mác.</b></p>
+    <p style="text-align:center;"><a> <img src="{% static './images/ship3.jpg' %}" alt=""></a></p>
+    <p style="text-align:center;"><i>Trang sức được xếp gọn gàng, ngay ngắn trong hộp và niêm phong bằng tem</i></p>
+    <p style="text-align:center;"><a> <img src="{% static './images/ship4.jpg' %}" alt=""></a></p>
+    <p style="text-align:center;"><i>Hộp hàng được gói kín, niêm phong bằng 02 tem Kim Thành Jewelry ở giữa mỗi nắp hộp. Xung quanh thành hộp được dán bằng băng keo </i></p>
+    <p>Trường hợp sản phẩm quý khách nhận được có khiếm khuyết, hư hỏng hoặc không như mô tả ban đầu, Kim Thành Jewelry cam kết bảo vệ quý khách bằng <b>Chính sách bảo hành và thu đổi</b>.</p>
+    <p>Nếu có bất kỳ vấn đề phát sinh trong khâu giao hàng khiến quý khách hàng không hài lòng, Kim Thành Jewelry xin thành thật cáo lỗi và mong quý khách hàng có thể liên hệ phản ánh trực tiếp với Kim Thành Jewelry để chúng tôi có thể nâng cao chất lượng dịch vụ.</p>
+    <p>Tổng đài 0898673211 hoàn toàn miễn phí từ 08:00 đến 21:00 (kể cả lễ Tết).</p>
+    <p>Cảm ơn quý khách hàng đã lựa chọn sản phẩm của Kim Thành Jewelry.</p>
+
+    <h1><b>Mua Hàng và Thanh Toán </b></h1>
+    <p>Thanh toán dễ dàng với mọi hình thức qua thẻ ngân hàng khi khách hàng mua hàng trực tuyến</p>
+    <p style="text-align:center;"><a> <img src="{% static './images/thanhtoan1.png' %}" alt=""></a></p>
+    <p style="text-align:center;">Thanh toán qua thẻ ngân hàng</p>
+    <p style="text-align:center;"><a> <img src="{% static './images/thanhtoan2.png' %}" alt=""></a></p>
+    <p style="text-align:center;">Thanh toán trực tiếp khi sản phẩm được trao tận tay cho khách hàng</p>
+    <p style="text-align:center;"><a> <img src="{% static './images/thanhtoan3.png' %}" alt=""></a></p>
+    <p style="text-align:center;">Thanh toán trực tuyến</p>
+    <p>Khuyến khích khách hàng đến cửa hàng trực tiếp để được trải nghiệm sản phẩm tốt hơn</p>
+    <p><b>Hoặc Liên hệ hotline</b></p>
+    <p>Quý khách hàng vui lòng liên hệ hotline (miễn phí) của Kim Thành Jewelry 0898673211 hoặc 0909123456 để được phục vụ một cách tốt nhất. Thời gian từ 8h – 21h (kể cả chủ nhật & trừ ngày lễ), đội ngũ chuyên viên tư vấn tại Kim Thành Jewelry luôn sẵn sàng phục vụ.</p>
+</section>
+<!-- features section ends -->
+
+<!-- footer section starts -->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <a> <img src="{% static './images/Logo.jpg' %}" alt=""></a>
+            <h3> Trang Sức Kim Thành  </h3>
+            <p>"Vẻ Đẹp Là Linh Hồn Của Cơ Thể"
+                "Thời Trang Có Thể Phai Tàn Nhưng Phong Cách Sẽ Tồn Tại Mãi Mãi"</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Địa chỉ & liên hệ</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +0898673211 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +0909123456 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> vuongkimthanh2001@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> TP.Hồ Chí Minh, Việt Nam - 008428 </a>
+        </div>
+
+        <div class="box">
+            <h3>Đường dẫn</h3>
+            <a href="HomePage.html" class="links"> <i class="fas fa-arrow-right"></i> Trang Chủ </a>
+            <a href="TrangSuc.html" class="links"> <i class="fas fa-arrow-right"></i> Trang Sức </a>
+            <a href="TrangSuc.html" class="links"> <i class="fas fa-arrow-right"></i> Quà Tặng </a>
+            <a href="KhuyenMai.html" class="links"> <i class="fas fa-arrow-right"></i> Khuyến Mãi </a>
+            <a href="DichVu.html" class="links"> <i class="fas fa-arrow-right"></i> Dịch Vụ </a>
+            <a href="GioiThieuvaLienHe.html" class="links"> <i class="fas fa-arrow-right"></i> Giới Thiệu & Liên Hệ </a>
+        </div>
+
+        <div class="box">
+            <h3>Thông Báo</h3>
+            <p>Đăng kí để nhận thông báo ưu đãi</p>
+            <input type="email" placeholder="email của bạn" class="email">
+            <input type="submit" value="đăng ký" class="btn">
+            <img src="{% static './images/payment.png' %}" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> Cửa hàng trang sức<span> Kim Thành </span> | Nâng niêu vẻ đẹp Việt Nam </div>
+
+</section>
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script type="text/javascript" src="{% static './js/script.js' %}"></script>
+
+</body>
+</html>

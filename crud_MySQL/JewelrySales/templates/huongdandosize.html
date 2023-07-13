@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn đo size</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static './css/style.css' %}">
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+    
+    <nav class="navbar">
+        <a href="{% url 'home'%}"> <img src="{% static './images/Logo.jpg' %}" alt=""></a>
+        <a href="{% url 'home'%}">Trang chủ</a>
+        <a href="{% url 'trangsuc'%}">Trang sức</a>
+        <a href="{% url 'trangsuc'%}">Quà Tặng</a>
+        <a href="{% url 'khuyenmai'%}">Khuyến Mãi</a>
+        <a href="{% url 'dichvu'%}">Dịch vụ</a>
+        <a href="{% url 'gioithieuvalienhe'%}">Giới thiệu & Liên Hệ</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Tìm kiếm...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static './images/cart-img-1.jpg' %}" alt="">
+            <div class="content">
+                <h3>Nhẫn Bạc Nam Hoa Văn</h3>
+                <span class="price">650.000VND</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static './images/cart-img-2.jpg' %}" alt="">
+            <div class="content">
+                <h3>Nhẫn Bạc Nữ Hình Rắn</h3>
+                <span class="price">350.000VND</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static './images/cart-img-3.jpg' %}" alt="">
+            <div class="content">
+                <h3>Nhẫn Cặp Bạc Tình Yêu Cao Cấp</h3>
+                <span class="price">650.000VND</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> Tổng : 1.650.000VND </div>
+        <a href="#" class="btn">Thanh toán</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>Đăng nhập tài khoản</h3>
+        <input type="Email" placeholder="Email" class="box">
+        <input type="Mật Khẩu" placeholder="Mật khẩu" class="box">
+        <p>Quên mật khẩu? <a href="QuenMatKhau.html">Bấm vào đây</a></p>
+        <p>Không có tài khoản? <a href="DangKy.html">Đăng ký ngay</a></p>
+        <input type="submit" value="Đăng nhập" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>WEBSITE CỬA HÀNG TRANG SỨC DỰA TRÊN GIẢI THUẬT FP-GROWTH </h3>
+        <p>CỬA HÀNG TRANG SỨC KIM THÀNH</p>
+        <p>"Vẻ đẹp là linh hồn của cơ thể"</p>
+    </div>
+
+</section>
+
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>Hướng dẫn đo size </span> </h1>
+</section>
+
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>Hướng dẫn đo size Nhẫn </span> </h1>
+
+    <p>Kim Thành Jewelry sẽ hướng dẫn bạn cách đo kích thước nhẫn tại nhà & cách bí mật đo nhẫn để tạo bất ngờ cho món quà dành tặng người thân, nhất là đối với những thời khắc đặc biệt trong đời. Với những bí quyết trong bài, bạn có thể dễ dàng mua sắm nhẫn vàng, nhẫn bạc, nhẫn cưới, nhẫn kim cương hay nhẫn đôi ngay trên online mà không còn gì phải lo ngại.</p>
+    <p><b>Bảng size nhẫn</b></p>
+    <p>Size nhẫn nữ PNJ từ size 6 – 14. Size nhẫn nam PNJ từ size 14 – 20</p>
+    <p style="text-align:center;"><a> <img src="image/dosize1.png" alt=""></a></p>
+    <h1><b>Những cách đơn giản nhất để đo size nhẫn</b></h1>
+    <p><b>Đo bằng tờ giấy & thước</b></p>
+    <p>Bước 1: Chuẩn bị một cây thước, 1 cây kéo, 1 cây bút & một tờ giấy</p>
+    <p>Bước 2: Cắt một mảnh giấy dài khoảng 10 cm và rộng 1 cm.</p>
+    <p>Bước 3: Sử dụng đoạn giấy vừa cắt để quấn sát quanh ngón tay muốn đo.</p>
+    <p>Bước 4: Đánh dấu điểm giao nhau.</p>
+    <p>Bước 5: Tháo ra dùng thước đo chiều dài của đoạn giấy từ điểm đầu cho đến phần đánh dấu. Lấy kết quả đo được chia cho 3,14. Sau đó đối chiếu với Bảng size nhẫn.</p>
+    <p style="text-align:center;"><a> <img src="image/dosize2.png" alt=""></a></p>
+    <p><b>Đo theo một chiếc nhẫn có sẵn</b></p>
+    <p>Bước 1: Chuẩn bị một cây thước cùng chiếc nhẫn muốn đo</p>
+    <p>Bước 2: Chuẩn bị một cây thước cùng chiếc nhẫn muốn đo</p>
+    <p>Bước 3: Đối chiếu số mm của thước với kích trên BẢNG SIZE NHẪN bên trên.</p>
+    <p style="text-align:center;"><a> <img src="image/dosize3.png" alt=""></a></p>
+    <h1><b>Những lưu ý khi đo</b></h1>
+    <p><b>Kích cỡ ngón tay phụ thuộc nhiệt độ</b></p>
+    <p>Nhiệt độ là nguyên nhân gây ra việc đo kích thước nhẫn không chính xác. Khi thời tiết lạnh ngón tay của bạn có thể nhỏ hơn bình thường, bạn nên cộng thêm cho chu vi là 1 mm còn khi thời tiết nóng thì ngược lại, trừ đi 1 mm. Trường hợp xương khớp ngón tay của bạn to, thì bạn nên đo chu vi ở gần khớp (không phải trên khớp) Sao cho khi đeo nhẫn dễ vào nhưng không bị tuột mất.</p>
+    <P><b>Chú ý độ dày của nhẫn PNJ</b></P>
+    <p>Độ dày của nhẫn cũng ảnh hưởng đến size ni của mỗi người. Đối với các loại nhẫn như <b>nhẫn vàng, nhẫn bạc</b>đặc biệt là <b>nhẫn cưới</b>của PNJ, độ dày sẽ khác nhau. Do đó, khi tiến hành đo, bạn cần phải chú ý và cho kích thước thêm hoặc bớt đi một khoản để khi đeo nhẫn có thể thoải mái mà không bị gò bó.</p>
+    <p style="text-align:center;"><a> <img src="image/dosize4.png" alt=""></a></p>
+    <p><b>Để ý những khớp tay</b></p>
+    <p>Các khớp tay có thể to hơn so với ở phía gốc của ngón. Do đó bạn cần phải đo kích thước ở khớp ngón và gốc ngón, sau đó lấy kích thước giữa 2 phần để chọn size nhẫn phù hợp.</p>
+    <p>Lúc này tay đeo nhẫn của bạn sẽ có cảm giác thoải mái và không bị khó chịu khi co hoặc gập ngón tay.</p>
+    <p>Trong trường hợp khớp xương ngón tay của bạn to, bạn nên đo chu vi ở gần khớp (không phải trên khớp) sao cho khi bạn đeo nhẫn thì nhẫn dễ vào và không bị tuột mất.</p>
+    <p style="text-align:center;"><a> <img src="image/dosize5.png" alt=""></a></p>
+    <p><b>Đo lại nhiều lần để có số liệu chính xác nhất</b></p>
+    <p>Khi đo size tay chắc chắn sẽ có những sai sót, vì vậy hãy cẩn thận đo từ 3-4 lần để tìm ra số đo chính xác nhất. Làm theo cách này, kích cỡ bạn đo được sẽ có độ chính xác cao từ 85-95%.</p>
+    <p><b>Size nhẫn nam và nữ có khác nhau không?</b></p>
+    <p>Với nam và nữ thì kích thước tay sẽ khác nhau nhưng đối với kích thước ngón tay thì tương đối giống nhau. Do đó, bạn có thể thực hiện việc đo size nhẫn tương tự như của nữ. Đối với nhẫn cưới, nhẫn kiểu hoặc nhẫn bạc vẫn có thể áp dụng theo cách này.</p>
+    <h1><b>Những mẹo đo size nhẫn bí mật</b></h1>
+    <p><b>Mượn nhẫn của người mình muốn tặng</b></p>
+    <p>Các chàng trai có thể bí mật đo kích cỡ bằng cách giả vờ mượn những chiếc nhẫn của người ấy (nhẫn thường, nhẫn kiểu hay nhẫn đôi đều được), sau đó dùng thước kẻ đo đường kính chu vi phía trong của chiếc nhẫn như hướng dẫn phía trên.</p>
+    <p><b>Nhờ người thân</b></p>
+    <p>Cách đơn giản nhất để biết được size nhẫn của người yêu mà không để nàng phát hiện hay nghi ngờ là nhờ sự trợ giúp từ người thân, có thể là mẹ, chị em gái hoặc là bạn bè. Họ có thể giúp bạn lấy thông tin này một cách tự nhiên và dễ dàng thông qua việc hỏi và nhờ thử giúp những chiếc nhẫn vàng hay nhẫn bạc.</p>
+    <p><b>Quan sát và ước lượng</b></p>
+    <p>Với những ai không biết đo hoặc lý do nào đó chưa đo được thì có thể áng chừng size tay đeo nhẫn qua chiều cao cân nặng theo bảng bên dưới:</p>
+    <p style="text-align:center;"><a> <img src="image/dosize6.png" alt=""></a></p>
+    <p><b>Giả vờ nhờ người ấy thử nhẫn để giúp bạn mua tặng người khác</b></p>
+    <p>Đối với cách này, bạn cần phải khéo léo nhờ người ấy giúp bạn thử nhẫn, có thể là nhẫn kiểu đẹp hoặc nhẫn vàng mua tặng cho mẹ hoặc chị gái. Đồng thời, bạn cũng cần phải quan sát và chú ý đến kích cỡ ngón tay của người ấy để bạn có thể dễ dàng mua được nhẫn đôi hoặc nhẫn cưới thích hợp.</p>
+    <p style="text-align:center;"><a> <img src="image/dosize7.png" alt=""></a></p>
+    <p><b>Bí mật đo một cách tự nhiên</b></p>
+    <p>Nếu những cách trên vẫn chưa hiệu quả, bạn có thể thử:</p>
+    <p>Đo tay khi người ấy đang ngủ: Ngoài ra, bạn có thể tiến hành cách này, khi cô ấy ngủ, bạn sử dụng dụng cụ dây hoặc sợi chỉ để đo ngón tay. Nếu cô ấy thức giấc, bạn cần phải bình tĩnh và nói rằng bạn đang vuốt ve tay của cô ấy để tránh sự nghi ngờ.</p>
+    <p>So sánh ngón tay của mình với người ấy: Đối với cách này, bạn cần phải có sự quan sát kỹ và cẩn thận đến khớp và phía dưới gốc ngón tay có kích cỡ như thế nào so với ngón tay tương tự của mình để tìm ra size nhẫn chính xác nhất.</p>
+</section>
+
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>Hướng dẫn đo size vòng tay </span> </h1>
+    <p>Hiện nay, việc mua sắm trang sức Online rất được ưa chuộng và phổ biến với nhiều tiện ích như: tiết kiệm thời gian, mua sắm bất kỳ lúc nào hay bất kỳ nơi đâu, ngoài ra còn có thể bí mật tạo bất ngờ bằng món quà tặng cho người thân,…Tuy nhiên, bạn lo lắng khi chọn mua trang sức, nhất là vòng tay, lắc tay nhưng lại chưa biết size của người đeo. Hôm nay, PNJBlog chia sẻ đến bạn 3 cách đo size vòng, lắc tay tại nhà đơn giản nhưng vô cùng chính xác nhé!</p>
+    <h1><b>Cách 1: Dùng thước đo lắc, vòng tay có sẵn</b></h1>
+    <p>Đo một chiếc lắc, vòng tay có sẵn chính là cách đơn giản nhất để tìm ra size lắc, vòng tay bạn cần.</p>
+    <p><b>Đo lắc tay</b></p>
+    <p style="text-align:center;"><a> <img src="image/dosize8.png" alt=""></a></p>
+    <p>Bước 1: Dùng thước để đo chiều dài của chiếc lắc tay.</p>
+    <p>Bước 2: Lấy kết quả đo được đối chiếu số cm trên thước với thông số của bảng kích thước lắc tay như hình dưới.</p>
+    <p>Bước 3: Kích thước lắc tay của bạn chính là size số ghi dưới đường thẳng. Sau khi chọn size lắc, nhân viên PNJ sẽ gọi liên hệ xác nhận và tư vấn cụ thể để đảm bảo đáp ứng đúng yêu cầu của bạn.</p>
+    <p><b>Đo vòng tay</b></p>
+    <p style="text-align:center;"><a> <img src="image/dosize9.png" alt=""></a></p>
+    <p style="text-align:center;"><a> <img src="image/dosize10.png" alt=""></a></p>
+    <p style="text-align:center;"><a> <img src="image/dosize11.png" alt=""></a></p>
+    <p>Bước 1: Dùng thước để đo đường kính bên trong của chiếc vòng tay.</p>
+    <p>Bước 2: Lấy kết quả đo được đối chiếu số mm trên thước với thông số của bảng kích thước vòng tay như hình dưới.</p>
+    <p>Bước 3: Kích thước vòng tay của bạn chính là size số ghi dưới vòng tròn. Sau khi chọn size vòng, Tư vấn viên PNJ sẽ liên hệ xác nhận và tư vấn cụ thể để đảm bảo đáp ứng đúng yêu cầu của bạn.</p>
+    <p><b>Cách 2: Đo thủ công</b></p>
+    <p>Trường hợp bạn không có sẵn một chiếc vòng tay, lắc tay sẵn để đo, bạn có thể sử dụng những dụng cụ văn phòng cơ bản như một miếng giấy nhỏ (có thể thay bằng sợi dây/thước dây,…), một chiếc kéo, một cây thước và làm theo hướng dẫn sau:</p>
+    <p><b>Đo lắc tay</b></p>
+    <p style="text-align:center;"><a> <img src="image/dosize12.png" alt=""></a></p>
+    <p>Bước 1: Cắt tờ giấy A4 theo cạnh dài, có chiều rộng hẹp tượng trưng cho sợi dây.</p>
+    <p>Bước 2: Dùng mảnh giấy (sợi dây/thước dây,…) quấn quanh cổ tay đeo vòng, bạn lưu ý quấn trừ hao sao cho kích cỡ thoải mái một chút, dùng bút đánh dấu hoặc kéo cắt điểm giao nhau của hai đầu.</p>
+    <p>Bước 3: Trải căng dài mảnh giấy (sợi dây/thước dây,…) ra rồi dùng thước đo độ dài từ điểm đầu đến điểm đã đánh dấu.</p>
+    <p>Bước 4: Đối chiếu kích thước đường kính vừa tính (theo cm) với bảng kích thước vòng tay ở phần trước. Kích thước vòng của bạn tương ứng với size số ghi dưới vòng tròn.</p>
+    <p><b>Đo vòng tay</b></p>
+    <p>Đối với Vòng kiểu Tròn:</p>
+    <p>Bước 1: Cắt tờ giấy A4 theo cạnh dài, có chiều rộng hẹp tượng trưng cho sợi dây.</p>
+    <p>Bước 2: Dùng mảnh giấy (sợi dây/thước dây,…) quấn quanh cổ tay đeo vòng, bạn lưu ý quấn trừ hao sao cho kích cỡ thoải mái một chút, dùng bút đánh dấu hoặc kéo cắt điểm giao nhau của hai đầu.</p>
+    <p>Bước 3: Trải căng dài mảnh giấy (sợi dây/thước dây,…) ra rồi dùng thước đo độ dài từ điểm đầu đến điểm đã đánh dấu.</p>
+    <p>Bước 4: Lấy giá trị đo được chia 3.14, bạn sẽ có đường kính vòng.</p>
+    <p>Bước 5: Đối chiếu kích thước đường kính vừa tính (theo mm) với bảng kích thước vòng tay ở phần trước. Kích thước vòng của bạn tương ứng với size số ghi dưới vòng tròn.</p>
+    <p>Đối với Vòng kiểu Oval: Bạn có thể đo chiều ngang cổ tay, kích thước vòng tay của bạn (tính theo mm) chính là size số ghi dưới vòng tròn.</p>
+    <p style="text-align:center;"><a> <img src="image/dosize13.png" alt=""></a></p>
+    <p>Hy vọng với những chia sẻ về 3 cách tự đo size vòng, lắc tay đơn giản tại nhà có thể giúp bạn lựa chọn được món trang sức vòng tay, lắc tay ưng ý, vừa vặn nhất cho bản thân và cho những người thương yêu!</p>
+</section>
+
+
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>Hướng dẫn đo size dây chuyền </span> </h1>
+    <p>Để mua một món đồ trang sức như dây chuyền, dây cổ,… không đơn giản như bạn nghĩ, đặc biệt là làm quà tặng. Ngoài việc lựa chọn những mẫu mã phù hợp thì kích thước phù hợp cũng là vấn đề bạn cần quan tâm. Trong bài viết này, sẽ mách bạn cách đo size dây chuyền và dây cổ chuẩn nhất để tạo bất ngờ cho món quà dành tặng người thân. Với những bí quyết trong bài, bạn có thể dễ dàng mua sắm trang sức ngay trên online mà không còn gì phải lo ngại.</p>
+    <h1><b>Hướng dẫn đo size dây chuyền </b></h1>
+    <p><b>Cách 1: Dùng thước dây để đo</b></p>
+    <p style="text-align:center;"><a> <img src="image/dosize14.png" alt=""></a></p>
+    <p>Nên có một chiếc dây chuyền/dây cổ khác để đo, cách chính xác nhất là bạn dùng một chiếc dây chuyền/dây cổ có độ rộng và kiểu dáng tương tự chiếc bạn định mua và làm theo các bước sau:</p>
+    <p>
+        <li>Bạn dùng thước để đo chiều dài đoạn dây.</li>
+        <li>Sau khi có kích thước, bạn đối chiếu số cm của thước với kích thước minh họa như hình trên</li>
+        <li>Kích thước dây chuyền của bạn chính là size số ghi bên dưới đường thẳng. Sau khi có chiều dài, bạn chỉ cần đối chiếu với với các size dây chuyền phổ biến của PNJ dưới đây.</li>
+    </p>
+    <p><b>Lưu ý:</b></p>
+    <p>
+        <li>Size dây phổ biến của PNJ thường có đối với dây chuyền bạc là size 42 và các size chênh lệch trong khoảng từ 40 – 42 cm, đối với dây chuyền vàng là size 42 hoặc size 45 và đối với dây cổ bạc là size 42.</li>
+        <li>Trường hợp size dây bạn đo được không có, PNJ sẽ đặt làm trong thời gian tối đa là 2 tuần và chỉ áp dụng cho trang sức bằng vàng.</li>
+    </p>
+    <p><b>Cách 2: Đo thủ công</b></p>
+    <p>Trong trường hợp không có dây chuyền để tham khảo, cách đo thủ công này sẽ hỗ trợ bạn trong việc ước lượng kích thước. Tuy nhiên, độ chính xác của cách này chỉ là tương đối nên bạn có thể tham khảo để có thể ước lượng size.</p>
+    <p>Bạn sử dụng một miếng giấy nhỏ, quấn chừng quanh cổ theo vòng dây mà bạn muốn đeo, sau đó đo độ dài bằng thước kẻ như thao tác đã hướng dẫn ở cách đầu tiên.</p>
+    <p>Lưu ý: Khi đo size có thể sẽ có những sai sót, vì vậy hãy cẩn thận đo từ 3-4 lần để tìm ra số đo chính xác nhất. Làm theo cách này, kích cỡ bạn đo được sẽ có độ chính xác cao.</p>
+    <p style="text-align:center;"><a> <img src="image/dosize15.png" alt=""></a></p>
+    <p><b>Một số độ dài dây chuyền/ dây cổ thông thường</b></p>
+    <p>Để tìm được một thiết kế dây chuyền phù hợp với khuôn mặt và trang phục, bạn có thể tham khảo một vài thông tin độ dài dây chuyền dưới đây:</p>
+    <p>Từ 35 – 40cm: Là loại dây chuyền sát với chân cổ nhưng không gây khó chịu khi sinh hoạt, vận động.</p>
+    <p>Từ 45cm: Chiều dài của dây chạm đến ngang xương quai đòn, đây là kiểu phổ biến nhất vì nó tôn được khuôn mặt người đeo.</p>
+    <p style="text-align:center;"><a> <img src="image/dosize16.png" alt=""></a></p>
+    <p>Từ 50 – 55cm: Dây chuyền sẽ nằm ở vị trí dưới xương quai đòn nhưng trên ngực vài cm. Đây là chiều dài phù hợp với các thiết kế dây chuyền có mặt dây đi kèm.</p>
+    <p>Từ 60cm: Những loại dây chuyền có chiều dài như thế này thường chạm đến giữa ngực, thích hợp với những trang phục xẻ sâu.</p>
+    <p>Từ 70cm trở lên: Đây là mẫu dây chuyền dài xuống quá ngực cho đến ngang rốn, thường là dạng dây chuyền trơn hoặc xâu chuỗi hạt, ít xuất hiện cùng các loại mặt đá đính kèm.</p>
+</section>
+
+<section class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <a> <img src="{% static './images/Logo.jpg' %}" alt=""></a>
+            <h3> Trang Sức Kim Thành  </h3>
+            <p>"Vẻ Đẹp Là Linh Hồn Của Cơ Thể"
+                "Thời Trang Có Thể Phai Tàn Nhưng Phong Cách Sẽ Tồn Tại Mãi Mãi"</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Địa chỉ & liên hệ</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +0898673211 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +0909123456 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> vuongkimthanh2001@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> TP.Hồ Chí Minh, Việt Nam - 008428 </a>
+        </div>
+
+        <div class="box">
+            <h3>Đường dẫn</h3>
+            <a href="HomePage.html" class="links"> <i class="fas fa-arrow-right"></i> Trang Chủ </a>
+            <a href="TrangSuc.html" class="links"> <i class="fas fa-arrow-right"></i> Trang Sức </a>
+            <a href="TrangSuc.html" class="links"> <i class="fas fa-arrow-right"></i> Quà Tặng </a>
+            <a href="KhuyenMai.html" class="links"> <i class="fas fa-arrow-right"></i> Khuyến Mãi </a>
+            <a href="DichVu.html" class="links"> <i class="fas fa-arrow-right"></i> Dịch Vụ </a>
+            <a href="GioiThieuvaLienHe.html" class="links"> <i class="fas fa-arrow-right"></i> Giới Thiệu & Liên Hệ </a>
+        </div>
+
+        <div class="box">
+            <h3>Thông Báo</h3>
+            <p>Đăng kí để nhận thông báo ưu đãi</p>
+            <input type="email" placeholder="email của bạn" class="email">
+            <input type="submit" value="đăng ký" class="btn">
+            <img src="{% static './images/payment.png' %}" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> Cửa hàng trang sức<span> Kim Thành </span> | Nâng niêu vẻ đẹp Việt Nam </div>
+
+</section>
+<!-- footer section ends -->
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script type="text/javascript" src="{% static './js/script.js' %}"></script>
+
+</body>
+</html>

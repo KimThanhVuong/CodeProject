@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mặt Dây Chuyền Bộ Bài Sảnh Bạc</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+   
+    <!-- Css Styles -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css2/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css2/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css2/owl.carousel.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css2/style2.css' %}">  
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="{% static 'images/breadcrumb.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>WEBSITE CỬA HÀNG TRANG SỨC DỰA TRÊN GIẢI THUẬT FP-GROWTH</h2>
+                        <div class="breadcrumb__option">
+                            <a href="{% url 'home'%}">Quay lại trang chủ</a>
+                            <span> Xem sản phẩm </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Product Details Section Begin -->
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__pic">
+                        <div class="product__details__pic__item">
+                            <img class="product__details__pic__item--large"
+                                src="{% static 'images/cat-3.jpg' %}" alt="">
+                        </div>
+                        <div class="product__details__pic__slider owl-carousel">
+                            <img data-imgbigurl="{% static 'images/cat-31.jpg' %}"
+                                src="{% static 'images/cat-31.jpg' %}" alt="">
+                            <img data-imgbigurl="{% static 'images/cat-32.jpg' %}"
+                                src="{% static 'images/cat-32.jpg' %}" alt="">
+                            <img data-imgbigurl="{% static 'images/cat-33.jpg' %}"
+                                src="{% static 'images/cat-33.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <a class="product__details__text">
+                        <h3>Mặt Dây Chuyền Bộ Bài Sảnh Bạc</h3>
+                        <div class="product__details__price">990.000VND</div>
+                        <li><span>Chất liệu bạc nguyên chất 925</span></li>
+                        <li><span>Thiết kế tinh xảo trên công nghệ 3D tiên tiến</span></li>
+                        <li><span>Bảo hành miễn phí trọn đời đánh bóng làm mới hoặc rơi đá</span></li>
+                        <li><span>Kiểu dáng trẻ trung thời trang</span></li>
+                        <div class="product__details__quantity">
+                            <div class="quantity">
+                                <div class="pro-qty">
+                                    <input type="text" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="{% url 'shopingcart'%}" class="primary-btn">THÊM VÀO GIỎ HÀNG</a>
+                        <a href="{% url 'huongdandosize'%}"><p><u>hướng dẫn đo size</u></p></a>
+                        <ul>
+                            <li><b>Sản phẩm :</b> <span>còn hàng</span></li>
+                            <li><b>Thời gian giao hàng (1-3 ngày dự kiến) :</b> <span> nội thành HCM: miễn phí , ngoại thành: 20k , ship cod: tỉnh 30k</span></li>
+                            <li><span>Đăng ký tài khoản để nhận ưu đãi</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="product__details__tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                                    aria-selected="true">Mô tả sản phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                                    aria-selected="false">Vệ sinh sản phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                                    aria-selected="false">Bảo quản sản phẩm</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                <div class="product__details__tab__desc">
+                                    <h6>Thông tin sản phẩm</h6>
+                                    <p>- Sản phẩm: Mặt Dây Chuyền Bộ Bài Sảnh Bạc Thái</p>
+                                    <p>- Size: Freesize</p>
+                                    <p>- Màu sắc: Bạc cao cấp 925</p>
+                                    <p>- Chất lượng sản phẩm: Chất lượng tốt,độ bền cao,đảm bảo giống hình 100% .</p>
+                                    <p>- Shop luôn cập nhật những mẫu mới nhất, xu hướng của năm, đẹp và sang trọng nhưng không kém phần xinh xắn, dễ thương.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                <div class="product__details__tab__desc">
+                                    <h6>Cách vệ sinh sản phẩm</h6>
+                                    <li><b>Cách 1:</b><span>Gửi về cho shop hoặc mang tiệm bạc gần nhà đánh bóng sản phẩm</span></li>
+                                    <li><b>Cách 2:</b><span>Dùng kem đánh răng và bằng chải mềm đánh trực tiếp lên sản phẩm và rửa sạch lại với nước</span></li>
+                                    <li><b>Cách 3:</b><span>Nguyên liệu: Chanh, dấm, nước , muối hạt</span></li>
+                                    <li><b>B1: </b><span>Chuẩn bị 1 nồi nhỏ (nước đủ ngập sản phẩm thôi nhé)</span></li>
+                                    <li><b>B2: </b><span>Vắt quả chanh + 1 chút muối hạt + dấm</span></li>
+                                    <li><b>B3: </b><span>Đun sôi rồi thả sp bạc vào. đợi đến khi bạc sang trở lại thì vớt chúng ra. B4: Dùng kem đánh răng đánh bóng sản phẩm</span></li>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                <div class="product__details__tab__desc">
+                                    <h6>Cách bảo quản sản phẩm</h6>
+                                    <p>- Không để trang sức tiếp xúc với nước, hóa chất, lotion, các loại kem dưỡng sẽ làm trang sức dễ bị sét rỉ hoặc mất màu.</p>
+                                    <p>- Tháo trang sức khi làm việc nhà hoặc khi đi ngũ sẽ dễ gảy, không nên đeo trang sức khi chơi thể thao vì khi ra mồ hôi làm các loại đá bị mờ dễ gảy khi va đập hoặc rơi mất ,tránh tiếp xúc với các loại hóa chất có thể gây nên một số phản ứng khiến dễ bị dị ứng da.</p>
+                                    <p>- Khi đeo xong nên cất vô hộp kín ,đồng thời chia theo màu không nên để mạ vàng hay mạ bạc chung với nhau để tránh bị cọ sát và đổi màu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Details Section End -->
+
+    <!-- Related Product Section Begin -->
+    <section class="related-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title related__product__title">
+                        <h2>Sản phẩm liên quan</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="{% static './images/product-4.jpg'%}">
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Lắc Tay Bạc Nữ Đính Đá Đại Tây Dương</a></h6>
+                            <h5>400.000VND</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="{% static './images/product-5.jpg'%}">
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Dây Chuyền Bạc Trái Tim Đôi</a></h6>
+                            <h5>400.000VND</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="{% static './images/product-7.jpg'%}">
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Dây Chuyền Nam Chrome Heart Bạc</a></h6>
+                            <h5>1.800.000VND</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="{% static './images/product-9.jpg'%}">
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Mặt Dây Chuyền Nam Chrome Heart Bạc</a></h6>
+                            <h5>990.000VND</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related Product Section End -->
+
+    <!-- Js Plugins -->
+    <script type="text/javascript" src="{% static './js/js2/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/js2/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/js2/jquery.nice-select.min.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/js2/jquery-ui.min.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/js2/jquery.slicknav.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/js2/mixitup.min.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/js2/owl.carousel.min.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/js2/main.js' %}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu & Liên Hệ</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static './css/style.css' %}">
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+    
+    <nav class="navbar">
+        <a href="{% url 'home'%}"> <img src="{% static './images/Logo.jpg' %}" alt=""></a>
+        <a href="{% url 'home'%}">Trang chủ</a>
+        <a href="{% url 'trangsuc'%}">Trang sức</a>
+        <a href="{% url 'trangsuc'%}">Quà Tặng</a>
+        <a href="{% url 'khuyenmai'%}">Khuyến Mãi</a>
+        <a href="{% url 'dichvu'%}">Dịch vụ</a>
+        <a href="{% url 'gioithieuvalienhe'%}">Giới thiệu & Liên Hệ</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Tìm kiếm...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static './images/cart-img-1.jpg' %}" alt="">
+            <div class="content">
+                <h3>Nhẫn Bạc Nam Hoa Văn</h3>
+                <span class="price">650.000VND</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static './images/cart-img-2.jpg' %}" alt="">
+            <div class="content">
+                <h3>Nhẫn Bạc Nữ Hình Rắn</h3>
+                <span class="price">350.000VND</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static './images/cart-img-3.jpg' %}" alt="">
+            <div class="content">
+                <h3>Nhẫn Cặp Bạc Tình Yêu Cao Cấp</h3>
+                <span class="price">650.000VND</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> Tổng : 1.650.000VND </div>
+        <a href="#" class="btn">Thanh toán</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>Đăng nhập tài khoản</h3>
+        <input type="Email" placeholder="Email" class="box">
+        <input type="Mật Khẩu" placeholder="Mật khẩu" class="box">
+        <p>Quên mật khẩu? <a href="{% url 'quenmatkhau'%}">Bấm vào đây</a></p>
+        <p>Không có tài khoản? <a href="{% url 'dangky'%}">Đăng ký ngay</a></p>
+        <input type="submit" value="Đăng nhập" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>WEBSITE CỬA HÀNG TRANG SỨC DỰA TRÊN GIẢI THUẬT FP-GROWTH </h3>
+        <p>CỬA HÀNG TRANG SỨC KIM THÀNH</p>
+        <p>"Vẻ đẹp là linh hồn của cơ thể"</p>
+    </div>
+
+</section>
+
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>Giới Thiệu </span> </h1>
+
+    <p>Kim Thành Jewelry là một trong những thương hiệu trang sức bạc đang được bạn trẻ yêu thích nhất hiện nay. Đi cùng với chất liệu cao cấp là rất nhiều sản phẩm được thiết kế độc đáo, lấy cảm hứng từ những câu chuyện mang lại ý nghĩa may mắn cho người sử dụng</p>
+    <p>Trang sức Kim Thành là một trong những công ty chuyên cung cấp các mặt hàng trang sức đẹp uy tín hàng đầu trên cả nước. Với các sản phẩm chất lượng được làm từ vàng nguyên liệu, bạc, đá quý cao cấp, cùng với đa dạng mã được thay đổi cập nhật liên tục theo xu hướng hiện đại, thương hiệu Trang sức Kim Thành không chỉ định vị của mình trên trường trong nước mà cả trường quốc tế. Các sản phẩm của Kim Thành được nhiều đối tác nước ngoài đánh giá rất cao.</p>
+    <p>Hiện nay trên trường không có ít đơn vị cung cấp trang sức vàng bạc đá quý, nhưng rất nhiều khách hàng vẫn để dành tin yêu với  thương hiệu và tất cả đều không tự nhiên  lại được sử dụng tình cảm của nhiều khách hàng to như vậy!</p>
+
+    <p><b>Ý nghĩa logo</b></p>
+    <p>Niềm tin và hi vọng</p>
+    <p><b>Biểu tượng</b></p>
+    <p>Chim bồ câu là loài chim biểu tượng của tình yêu, hòa bình và hạnh phúc hoặc như một vị sứ giả mang đến một thông điệp nào đó</p>
+    <p><b>Về chúng tôi</b></p>
+    <p>
+        <li>Cam kết chất lượng</li>
+        <li>Cảm nhận khách hàng</li>
+        <li>Trải nghiệm của khách hàng</li>
+        <li>Khách hàng là thượng đế</li>
+    </p>
+    <p><b>Sứ mệnh của chúng tôi</b></p>
+    <p>Trang sức  ra đời với sứ mệnh mang đến cho khách hàng những món đồ trang sức đẹp tinh xảo, chất lượng tuyệt vời và giá thành hợp lý nhất!</p>
+    <p><b>Mục tiêu của chúng tôi</b></p>
+    <p>Mục tiêu trước mắt của chúng tôi được đưa tới khách hàng trong và ngoài nước những sản phẩm độc đáo nhất. chúng tôi đặc biệt mong muốn sẽ trở thành đơn vị cung cấp đồ họa sức mạnh phủ sóng trên toàn quốc và quốc tế. Dù bạn ở bất kỳ đâu, bất cứ nơi nào bạn cũng có thể ngắm nhìn và lựa chọn được cho mình những món trang sức hoàn toàn do chúng tôi cung cấp. Và để đạt được mục tiêu này, chúng tôi và được đầu tư xây dựng hệ thống bán hàng trực tuyến chuyên nghiệp và hiện đại nhất nhằm đáp ứng tốt nhất cho sự tương tác với quý khách hàng ở xa.</p>
+    <p>Với niềm đam mê, sáng tạo và sự tận tâm trong hoạt động kinh doanh, chúng tôi  luôn tự tin sẽ làm “vui lòng khách đến, vừa lòng khách đi”</p>
+    
+</section>
+
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>Liên Hệ </span> </h1>
+    <p><b>Liên hệ hotline</b></p>
+    <p>Quý khách hàng vui lòng liên hệ hotline (miễn phí) của Kim Thành Jewelry 0898673211 hoặc 0909123456 để được phục vụ một cách tốt nhất. Thời gian từ 8h – 21h (kể cả chủ nhật & trừ ngày lễ), đội ngũ chuyên viên tư vấn tại Kim Thành Jewelry luôn sẵn sàng phục vụ.</p>
+</section>
+
+<section class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <a> <img src="{% static './images/Logo.jpg' %}" alt=""></a>
+            <h3> Trang Sức Kim Thành  </h3>
+            <p>"Vẻ Đẹp Là Linh Hồn Của Cơ Thể"
+                "Thời Trang Có Thể Phai Tàn Nhưng Phong Cách Sẽ Tồn Tại Mãi Mãi"</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Địa chỉ & liên hệ</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +0898673211 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +0909123456 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> vuongkimthanh2001@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> TP.Hồ Chí Minh, Việt Nam - 008428 </a>
+        </div>
+
+        <div class="box">
+            <h3>Đường dẫn</h3>
+            <a href="HomePage.html" class="links"> <i class="fas fa-arrow-right"></i> Trang Chủ </a>
+            <a href="TrangSuc.html" class="links"> <i class="fas fa-arrow-right"></i> Trang Sức </a>
+            <a href="TrangSuc.html" class="links"> <i class="fas fa-arrow-right"></i> Quà Tặng </a>
+            <a href="KhuyenMai.html" class="links"> <i class="fas fa-arrow-right"></i> Khuyến Mãi </a>
+            <a href="DichVu.html" class="links"> <i class="fas fa-arrow-right"></i> Dịch Vụ </a>
+            <a href="GioiThieuvaLienHe.html" class="links"> <i class="fas fa-arrow-right"></i> Giới Thiệu & Liên Hệ </a>
+        </div>
+
+        <div class="box">
+            <h3>Thông Báo</h3>
+            <p>Đăng kí để nhận thông báo ưu đãi</p>
+            <input type="email" placeholder="email của bạn" class="email">
+            <input type="submit" value="đăng ký" class="btn">
+            <img src="{% static './images/payment.png' %}" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> Cửa hàng trang sức<span> Kim Thành </span> | Nâng niêu vẻ đẹp Việt Nam </div>
+
+</section>
+<!-- footer section ends -->
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script type="text/javascript" src="{% static './js/script.js' %}"></script>
+
+</body>
+</html>

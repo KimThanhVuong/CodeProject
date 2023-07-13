@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="css/dangky.css"
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <title>Quên Mật Khẩu</title>
+     {% load static %}
+     <link rel="stylesheet" type="text/css" href="{% static './css/dangky.css' %}">
+  </head>
+<body>
+  <div class="container">
+    <div class="title">Quên Mật Khẩu Tài Khoản</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Nhập email của bạn" required>
+          </div>
+          <div class="input-box">
+            <span class="details"> Mật Khẩu mới</span>
+            <input type="text" placeholder="Nhập mật khẩu mới của bạn " required>
+          </div>
+          <div class="input-box">
+            <span class="details"> Số Điện Thoại</span>
+            <input type="text" placeholder="Nhập số điện thoại của bạn" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Nhập lại mật Khẩu mới</span>
+            <input type="text" placeholder="Nhập lại mật khẩu mới của bạn" required>
+          </div>
+          <div class="input-box">
+            <span class="details"> Mã xác nhận Email hoặc SMS</span>
+            <input type="text" placeholder=" Nhập mã xác nhận của bạn" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Xác Nhận">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

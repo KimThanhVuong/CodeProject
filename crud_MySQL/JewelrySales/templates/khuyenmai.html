@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khuyến Mãi</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static './css/style.css' %}">
+</head>
+<body>
+    <!-- header section starts  -->
+
+<header class="header">
+    
+    <nav class="navbar">
+        <a href="{% url 'home'%}"> <img src="{% static './images/Logo.jpg' %}" alt=""></a>
+        <a href="{% url 'home'%}">Trang chủ</a>
+        <a href="{% url 'trangsuc'%}">Trang sức</a>
+        <a href="{% url 'trangsuc'%}">Quà Tặng</a>
+        <a href="{% url 'khuyenmai'%}">Khuyến Mãi</a>
+        <a href="{% url 'dichvu'%}">Dịch vụ</a>
+        <a href="{% url 'gioithieuvalienhe'%}">Giới thiệu & Liên Hệ</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Tìm kiếm...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static './images/cart-img-1.jpg' %}" alt="">
+            <div class="content">
+                <h3>Nhẫn Bạc Nam Hoa Văn</h3>
+                <span class="price">650.000VND</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static './images/cart-img-2.jpg' %}" alt="">
+            <div class="content">
+                <h3>Nhẫn Bạc Nữ Hình Rắn</h3>
+                <span class="price">350.000VND</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static './images/cart-img-3.jpg' %}" alt="">
+            <div class="content">
+                <h3>Nhẫn Cặp Bạc Tình Yêu Cao Cấp</h3>
+                <span class="price">650.000VND</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> Tổng : 1.650.000VND </div>
+        <a href="#" class="btn">Thanh toán</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>Đăng nhập tài khoản</h3>
+        <input type="Email" placeholder="Email" class="box">
+        <input type="Mật Khẩu" placeholder="Mật khẩu" class="box">
+        <p>Quên mật khẩu? <a href="{% url 'quenmatkhau'%}">Bấm vào đây</a></p>
+        <p>Không có tài khoản? <a href="{% url 'dangky'%}">Đăng ký ngay</a></p>
+        <input type="submit" value="Đăng nhập" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>WEBSITE CỬA HÀNG TRANG SỨC DỰA TRÊN GIẢI THUẬT FP-GROWTH </h3>
+        <p>CỬA HÀNG TRANG SỨC KIM THÀNH</p>
+        <p>"Vẻ đẹp là linh hồn của cơ thể"</p>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> <span>Khuyến Mãi</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="{% static './images/product-5.jpg' %}" alt="">
+                <h3>Dây Chuyền Bạc Trái Tim Đôi </h3>
+                <div class="price"> 400.000VND </div>
+                <p>Sale 15%</p>
+                <a href="#" class="btn">Mua Ngay</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{% static './images/product-6.jpg' %}" alt="">
+                <h3>Mặt Dây Chuyền Bộ Bài Sảnh Bạc </h3>
+                <div class="price"> 990.000VND </div>
+                <p>Sale 25%</p>
+                <a href="#" class="btn">Mua Ngay</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{% static './images/product-7.jpg' %}" alt="">
+                <h3>Dây Chuyền Nam Chrome Heart Bạc</h3>
+                <div class="price"> 1.800.000VND </div>
+                <p>Sale 40%</p>
+                <a href="#" class="btn">Mua Ngay</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{% static './images/product-8.jpg' %}" alt="">
+                <h3>Dây Chuyền Bạc |Chocker Boheme</h3>
+                <div class="price"> 480.000VND </div>
+                <p>Sale 15%</p>
+                <a href="#" class="btn">Mua Ngay</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="{% static './images/product-9.jpg' %}" alt="">
+                <h3>Mặt Dây Chuyền Nam Chrome Heart Bạc</h3>
+                <div class="price"> 990.000VND </div>
+                <p>Sale 25%</p>
+                <a href="#" class="btn">Mua Ngay</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{% static './images/product-10.jpg' %}" alt="">
+                <h3>Vòng Chuông Bé Bạc</h3>
+                <div class="price"> 400.000VND </div>
+                <p>Sale 10%</p>
+                <a href="#" class="btn">Mua Ngay</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{% static './images/product-11.jpg' %}" alt="">
+                <h3>Vòng Kiềng Knot Baby </h3>
+                <div class="price"> 480.000VND </div>
+                <p>Sale 15%</p>
+                <a href="#" class="btn">Mua Ngay</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{% static './images/product-12.jpg' %}" alt="">
+                <h3>Lắc Tay Nam Cao Cấp Cá Tính Bạc </h3>
+                <div class="price"> 1.250.000VND </div>
+                <p>Sale 40%</p>
+                <a href="#" class="btn">Mua Ngay</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- products section ends -->
+
+<!-- footer section starts -->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <a> <img src="{% static './images/Logo.jpg' %}" alt=""></a>
+            <h3> Trang Sức Kim Thành  </h3>
+            <p>"Vẻ Đẹp Là Linh Hồn Của Cơ Thể"
+                "Thời Trang Có Thể Phai Tàn Nhưng Phong Cách Sẽ Tồn Tại Mãi Mãi"</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Địa chỉ & liên hệ</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +0898673211 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +0909123456 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> vuongkimthanh2001@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> TP.Hồ Chí Minh, Việt Nam - 008428 </a>
+        </div>
+
+        <div class="box">
+            <h3>Đường dẫn</h3>
+            <a href="HomePage.html" class="links"> <i class="fas fa-arrow-right"></i> Trang Chủ </a>
+            <a href="TrangSuc.html" class="links"> <i class="fas fa-arrow-right"></i> Trang Sức </a>
+            <a href="TrangSuc.html" class="links"> <i class="fas fa-arrow-right"></i> Quà Tặng </a>
+            <a href="KhuyenMai.html" class="links"> <i class="fas fa-arrow-right"></i> Khuyến Mãi </a>
+            <a href="DichVu.html" class="links"> <i class="fas fa-arrow-right"></i> Dịch Vụ </a>
+            <a href="GioiThieuvaLienHe.html" class="links"> <i class="fas fa-arrow-right"></i> Giới Thiệu & Liên Hệ </a>
+        </div>
+
+        <div class="box">
+            <h3>Thông Báo</h3>
+            <p>Đăng kí để nhận thông báo ưu đãi</p>
+            <input type="email" placeholder="email của bạn" class="email">
+            <input type="submit" value="đăng ký" class="btn">
+            <img src="{% static './images/payment.png' %}" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> Cửa hàng trang sức<span> Kim Thành </span> | Nâng niêu vẻ đẹp Việt Nam </div>
+
+</section>
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script type="text/javascript" src="{% static './js/script.js' %}"></script>
+
+</body>
+</html>

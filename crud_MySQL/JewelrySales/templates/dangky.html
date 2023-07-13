@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="css/dangky.css"
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <title>Đăng Ký</title>
+     {% load static %}
+     <link rel="stylesheet" type="text/css" href="{% static './css/dangky.css' %}">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Đăng Ký Tài Khoản</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Tên Đầy Đủ</span>
+            <input type="text" placeholder="Nhập tên đầy đủ của bạn" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Tài Khoản</span>
+            <input type="text" placeholder="Nhập tên tài khoản của bạn" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Nhập email của bạn" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Số Điện Thoại</span>
+            <input type="text" placeholder="Nhập số điện thoại của bạn" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Mật Khẩu</span>
+            <input type="text" placeholder="Nhập Mật Khẩu của bạn" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Nhập Lại Mật Khẩu</span>
+            <input type="text" placeholder="Nhập lại mật khẩu của bạn" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Giới Tính</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Nam</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Nữ</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Khác</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Đăng Ký">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

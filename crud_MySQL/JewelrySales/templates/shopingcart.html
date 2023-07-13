@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giỏ Hàng</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css2/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css2/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css2/owl.carousel.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css2/style2.css' %}">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="{% static 'images/breadcrumb.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>WEBSITE CỬA HÀNG TRANG SỨC DỰA TRÊN GIẢI THUẬT FP-GROWTH</h2>
+                        <div class="breadcrumb__option">
+                            <a href="{% url 'home'%}">Quay lại trang chủ</a>
+                            <span>Giỏ Hàng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Shoping Cart Section Begin -->
+    <section class="shoping-cart spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="shoping__product">Sản phẩm</th>
+                                    <th>Giá tiền</th>
+                                    <th>Số lượng</th>
+                                    <th>Thành tiền</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="{% static 'images/giohang.jpg' %}" alt="">
+                                        <h5>Mặt Dây Chuyền Bộ Bài Sảnh Bạc</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        990.000VND
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        990.000VND
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__btns">
+                        <a href="{% url 'trangsuc' %}" class="primary-btn cart-btn">TIẾP TỤC MUA SẮM</a>
+                        <a href="#" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span>
+                            Cập nhật giỏ hàng</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__continue">
+                        <div class="shoping__discount">
+                            <h5>Mã giảm giá</h5>
+                            <form action="#">
+                                <input type="text" placeholder="Nhập mã giảm giá của bạn">
+                                <button type="submit" class="site-btn">Áp dụng mã giảm giá</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__checkout">
+                        <h5>Tổng giỏ hàng</h5>
+                        <ul>
+                            <li>Tổng cộng <span>990.000VND</span></li>
+                            <li>Thành tiền <span>990.000VND</span></li>
+                        </ul>
+                        <a href="{% url 'hoadon' %}" class="primary-btn">TIẾP TỤC THANH TOÁN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shoping Cart Section End -->
+
+    <!-- Js Plugins -->
+    <script type="text/javascript" src="{% static '/js/js2/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/js/js2/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/js/js2/jquery.nice-select.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/js/js2/jquery-ui.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/js/js2/jquery.slicknav.js' %}"></script>
+    <script type="text/javascript" src="{% static '/js/js2/mixitup.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/js/js2/owl.carousel.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/js/js2/main.js' %}"></script>
+
+
+</body>
+
+</html>
